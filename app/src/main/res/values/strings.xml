@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="turn_location_on">Please turn on location</string>
+    <string name="loading">Loading…</string>
+
+    <string name="current_temp">%1$s %2$s</string>
+    <string name="current_min_temp">%1$s %2$s</string>
+    <string name="current_max_temp">%1$s %2$s</string>
+    <string name="last_updated">Last updated: %1$s</string>
+    <string name="save_location">Save</string>
+    <string name="location_description">Location Description</string>
+    <string name="location_name">Location Name</string>
+
+    <string name="min_temperature">min</string>
+    <string name="max_temperature">max</string>
+    <string name="current_temperature">current</string>
+    <string name="forecast">forecast</string>
+    <string name="add_location">Add location</string>
+    <string name="refresh">refresh</string>
+    <string name="network_error">Network error, please ensure you have network</string>
+    <string name="generic_error">Something went wrong</string>
+
+</resources>
