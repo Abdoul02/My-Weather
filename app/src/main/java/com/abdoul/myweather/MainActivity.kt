@@ -75,10 +75,13 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
         return when (item.itemId) {
             R.id.refresh -> {
-                mainViewModel.getWeatherInfo()
+                if (appUtility.isLocationEnabled() && appUtility.hasLocationPermission(this)) {
+                    mainViewModel.getWeatherInfo()
+                } else {
+                    appUtility.showMessage(getString(R.string.turn_location_on))
+                }
                 true
             }
             else -> super.onOptionsItemSelected(item)
